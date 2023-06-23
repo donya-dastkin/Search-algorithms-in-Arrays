@@ -20,3 +20,23 @@ function BinarySearch(arr, target) {
 
 let result = BinarySearch(arr,target)
 console.log("result :", result)
+
+//? recursive :
+const binarySearch = (arr, target, low, high) => {
+  if (low > high) {
+    return -1
+  }
+  let mid = Math.floor((low + high) / 2)
+  if (arr[mid] === target) {
+    return mid
+  }
+  if (arr[mid] > target) {
+    return binarySearch(arr, target, low, mid - 1)
+  }
+  if (arr[mid] < target) {
+    return binarySearch(arr, target, mid + 1, high)
+  }
+}
+
+result = binarySearch(arr,target,0,arr.length-1)
+console.log("result :", result)
