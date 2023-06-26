@@ -10,11 +10,11 @@ func main() {
 }
 
 func TernarySearch(arr [10]int, target int) int {
-	var left int = 0
-	var right int = len(arr) - 1
-	mid1 := left + ((right - left) / 3)
-	mid2 := right - ((right - left) / 3)
+	left := 0
+	right:= len(arr) - 1
 	for left <= right {
+		mid1 := left + ((right - left) / 3)
+		mid2 := right - ((right - left) / 3)
 		if arr[mid1] == target {
 			return mid1
 		}
