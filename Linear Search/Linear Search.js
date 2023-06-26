@@ -4,3 +4,8 @@ const linearSearch = (arr, x) => {
   }
   return -1;
 };
+
+const arr =[1,2,3,5,7,6,8,10,9]
+const x = 6
+const Result = linearSearch(arr,x)
+console.log("Result :" , Result)
