@@ -12,4 +12,4 @@
 
 ### Here, we implement array search algorithms first with Javascript and then with Golang 👩‍💻😃
 
-#### 💥 TIP : Programming is not related to syntax and programming language and has no effect on the logic of the program and its execution; But programming is about your logic and problem solving skills.
+#### 💥 Programming is not related to syntax and programming language and has no effect on the logic of the program and its execution; But programming is about your logic and problem solving skills.
