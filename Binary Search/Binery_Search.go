@@ -7,6 +7,8 @@ func main() {
 	target := 6
 	Result := BinarySearch(arr, target)
 	fmt.Println("Result :", Result)
+	Result2 := binarySearch(arr, target)
+	fmt.Println("Result :", Result2)
 }
 
 func BinarySearch(arr [10]int, target int) int {
@@ -24,3 +26,23 @@ func BinarySearch(arr [10]int, target int) int {
 	}
 	return -1
 }
+
+
+//func binarySearch(arr [10]int, target int) int {
+//	var left int = 0
+//	var right int = len(arr) - 1
+//	if left > right {
+//		return -1
+//	}
+//	mid := (left + right) / 2
+//	if arr[mid] == target {
+//		return mid
+//	}
+//	if arr[mid] > target {
+//		return binarySearch(arr, target)
+//	}
+//	if arr[mid] < target {
+//		return binarySearch(arr, target)
+//	}
+//	return -1
+//}
